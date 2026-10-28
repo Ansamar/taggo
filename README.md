@@ -1,3 +1,5 @@
+<p align="center"><img src="Resources/AppIcon.png" width="128" alt="Taggo"></p>
+
 # Taggo
 
 Editor di tag audio per macOS (SwiftUI + TagLib), ispirato al flusso di lavoro di Mp3tag.
@@ -14,7 +16,7 @@ Editor di tag audio per macOS (SwiftUI + TagLib), ispirato al flusso di lavoro d
 Guida per gli utenti: [HOW_TO_USE.md](HOW_TO_USE.md).
 
 ## Icona
-Metti `Resources/AppIcon.png` (1024×1024) oppure `Resources/AppIcon.icns`: gli script la includono da soli.
+`Resources/AppIcon.png` (1024×1024) è generata da `swift scripts/make-icon.swift Resources/AppIcon.png`, che disegna il monogramma T! in vettoriale. Gli script di build la convertono in `.icns` da soli.
 
 ## Licenze
 Taggo include [TagLib](https://taglib.org) 2.3.2 come libreria dinamica, sotto LGPL 2.1 / MPL 1.1 (testi in `Contents/Resources/Licenses`).
