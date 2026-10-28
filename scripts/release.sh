@@ -65,4 +65,6 @@ ditto -c -k --keepParent "$APP" "$DIST/Taggo-$VERSION.zip"
 (cd "$DIST" && shasum -a 256 "Taggo-$VERSION.dmg" "Taggo-$VERSION.zip" > SHA256SUMS.txt)
 
 lipo -info "$APP/Contents/MacOS/Taggo"
+# L'app resta solo dentro DMG e ZIP: una seconda Taggo.app sul disco confonde Spotlight e il Dock.
+rm -rf "$APP"
 ls -lh "$DIST"
