@@ -136,6 +136,17 @@ final class Library {
         files.removeAll { ids.contains($0.id) }
     }
 
+    /// Toglie tutti i brani dalla finestra (i file sul disco non vengono toccati).
+    func clearList() {
+        guard !isBusy, !files.isEmpty, confirmDiscardChanges() else { return }
+        resetPanel()
+        selection = []
+        files = []
+        roots = []
+        filter = ""
+        statusMessage = "Elenco svuotato"
+    }
+
     // MARK: - Salvataggio
 
     func save(completion: ((Bool) -> Void)? = nil) {

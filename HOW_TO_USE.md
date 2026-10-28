@@ -28,6 +28,8 @@ Requisiti: macOS 14 Sonoma o successivo, Mac Apple Silicon o Intel.
 - **Aggiungi cartella** (⇧⌘O) aggiunge file a quelli già aperti.
 - Clic su un'intestazione per ordinare. Tasto destro sull'intestazione per mostrare o nascondere colonne.
 - Il campo **Filtra** in alto mostra solo i file che contengono il testo cercato.
+- **Svuota elenco** (⇧⌘⌫) toglie tutti i brani dalla finestra. **⌫** toglie solo quelli selezionati.
+  I file sul disco non vengono toccati.
 
 I file senza tag compaiono normalmente, con le colonne dei tag vuote.
 
@@ -150,6 +152,7 @@ Apple Music, MusicBrainz o Google Immagini (utile per trovare le copertine).
 | Apri cartella / Aggiungi | ⌘O / ⇧⌘O |
 | Salva | ⌘S |
 | Ricarica | ⌘R |
+| Svuota elenco / Togli i selezionati | ⇧⌘⌫ / ⌫ |
 | Applica i campi del pannello | ⌘↩ |
 | Tag → Nome file / Nome file → Tag | ⌥1 / ⌥2 |
 | Numerazione / Dividi in dischi | ⌥⌘K / ⌥⌘D |

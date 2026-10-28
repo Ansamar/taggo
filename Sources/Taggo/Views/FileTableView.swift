@@ -25,6 +25,9 @@ struct FileTableView: View {
         } primaryAction: { ids in
             openFiles(ids)
         }
+        .onDeleteCommand {
+            library.removeFromList(library.selection)
+        }
         .overlay {
             if library.files.isEmpty && !library.isBusy {
                 ContentUnavailableView {

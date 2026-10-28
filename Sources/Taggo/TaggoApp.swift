@@ -64,6 +64,8 @@ struct TaggoCommands: Commands {
             Divider()
             Button("Ricarica") { library.reload() }
                 .keyboardShortcut("r")
+            Button("Svuota elenco") { library.clearList() }
+                .keyboardShortcut(.delete, modifiers: [.command, .shift])
         }
         CommandGroup(replacing: .saveItem) {
             Button("Salva") { library.save() }

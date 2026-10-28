@@ -30,6 +30,11 @@ struct ContentView: View {
                     Label("Ricarica", systemImage: "arrow.clockwise")
                 }
                 .help("Ricarica (⌘R)")
+                Button { library.clearList() } label: {
+                    Label("Svuota elenco", systemImage: "xmark.circle")
+                }
+                .help("Togli tutti i brani dalla finestra, senza toccare i file (⇧⌘⌫)")
+                .disabled(library.files.isEmpty)
             }
             ToolbarItemGroup {
                 Button { library.present(.tagToFilename) } label: {
